@@ -20,7 +20,8 @@ function App() {
     setPdfUrl('');
 
     try {
-      const res = await axios.get(`http://localhost:8000/api/generate-statement/?customer_id=${customerId}&language=${language}`);
+      const backendUrl = process.env.REACT_APP_BACKEND_URL;
+      const res = await axios.get(`${backendUrl}/api/generate-statement/?customer_id=${customerId}&language=${language}`);
       if (res.data.success) {
         setPdfUrl(res.data.pdf_url);
       } else {
