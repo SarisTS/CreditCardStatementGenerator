@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+.app-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.app-content{
+  flex: 1;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header > .right > a > button{
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+}
+.image{
+  text-align: center;
+}
+.image > img{
+  width: 98vw;
+  height: 400px;
+}
+footer > .foot-note{
+  padding: 20px 200px;
+  background-color: #dddcdc;
+  color: #414141;
+}
+.foot-note > ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.foot-note > ul > li {
+  padding: 0 30px;
+  position: relative;
+}
+
+.foot-note > ul > li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #888; /* optional styling */
+}
+.foot-note > .copyright{
+  text-align: center;
+}
+.Section h4{
+  color: red;
+}
+.Section > .above-content{
+  padding: 5rem 20rem;
+  text-align: center;
+}
+.Section > .below-content{
+  padding-left: 10rem;
+}
+
