@@ -1,1 +1,1 @@
-web: gunicorn creditportal.wsgi
+web: gunicorn creditportal.creditportal.wsgi
