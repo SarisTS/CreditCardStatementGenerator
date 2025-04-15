@@ -1,1 +1,1 @@
-web: gunicorn creditportal.creditportal.wsgi
+web: gunicorn creditportal.wsgi --chdir creditportal
