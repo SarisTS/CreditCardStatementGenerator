@@ -26,7 +26,7 @@ def generate_statement(request):
         # Fetch recent 10 transactions
         transactions = list(
             Transaction.objects.filter(Account=account)
-            .order_by('-TransactionDate')[:10]
+            .order_by('-TransactionDate')
             .values()
         )
 

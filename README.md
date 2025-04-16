@@ -37,7 +37,7 @@ npm start
 ---
 
 ### Sample API
-Visit http://localhost:8000/api/generate-statement/?customer_id=1&language=en
+Visit http://localhost:8000/api/generate-statement/?customer_id=1001&language=en
 
 ---
 
