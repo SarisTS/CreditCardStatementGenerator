@@ -295,7 +295,7 @@ translations = {
     'amount': 'Betrag',
     'type': 'Typ',
     },
- }  
+ }   
 
 # === PDF GENERATION FUNCTION ===
 def generate_pdf(customer, account, transactions, rewards, language='en'):
